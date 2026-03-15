@@ -1,0 +1,71 @@
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+
+    --bg: #f6f7fb;
+    --card-bg: rgba(255, 255, 255, 0.7);
+
+    --text: #0f172a;
+    --text-light: #64748b;
+
+    --border: rgba(255, 255, 255, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    color: var(--text);
+
+    /* moderner Gradient Background */
+    background: linear-gradient(
+            180deg,
+            #f8fafc 0%,
+            #eef2ff 100%
+    );
+
+    min-height: 100vh;
+}
+
+/* schöner Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 100px auto;
+}

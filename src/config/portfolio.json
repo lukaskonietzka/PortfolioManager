@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "title": "B.Eng.",
+    "name": "Sara Resech",
+    "image": "http://localhost:3000/pdf/sara.pdf",
+    "intro": "Frontend Entwickler mit Fokus auf React, TypeScript und UI/UX. Frontend Entwickler mit Fokus auf React, TypeScript und UI/UX.  Frontend Entwickler mit Fokus auf React, TypeScript und UI/UX.  Frontend Entwickler mit Fokus auf React, TypeScript und UI/UX.  Frontend Entwickler mit Fokus auf React, TypeScript und UI/UX. "
+  },
+  "theme": {
+    "primaryColor": "#6366f1",
+    "backgroundColor": "#ffffff",
+    "cardColor": "#ffffff",
+    "cardBorder": true,
+    "cardBorderColor": "#000000"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Bauhof Aichach",
+      "shortDescription": "Stairway to Heaven",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "img/bauhof_aichach.png",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com",
+      "pdf": "pdf/bauhof_aichach_plaene.pdf"
+    },
+    {
+      "id": "2",
+      "title": "Helmut-Haller-Platz Energie Broschüre",
+      "shortDescription": "",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "img/hhp_energie.png",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com",
+      "pdf": "pdf/hhp_energie.pdf"
+    },
+    {
+      "id": "3",
+      "title": "SWA Turm Baumgartnerstraße",
+      "shortDescription": "",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "img/baumgartner.png",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com",
+      "pdf": "pdf/baum_strasse_plaene.pdf"
+    },
+    {
+      "id": "4",
+      "title": "Wicona",
+      "shortDescription": "Konstruktionsmethodik",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "http://localhost:3000/img/example1.jpeg",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com",
+      "pdf": "pdf/wicona.pdf"
+    },
+    {
+      "id": "5",
+      "title": "Wicona Broschüre",
+      "shortDescription": "Konstruktionsmethodik",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "http://localhost:3000/img/example1.jpeg",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com"
+    },
+    {
+      "id": "6",
+      "title": "Hellmut-Halle-Platz Pläne",
+      "shortDescription": "",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "http://localhost:3000/img/example1.jpeg",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com"
+    },
+    {
+      "id": "7",
+      "title": "Helmut-Haller-Platz Modellfotos",
+      "shortDescription": "",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "http://localhost:3000/img/helmut_haller_platz.png",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com"
+    },
+    {
+      "id": "8",
+      "title": "IBA Summer School",
+      "shortDescription": "",
+      "description": "Eine vollständige Task Manager Anwendung mit Login, API Integration und Drag & Drop.",
+      "image": "http://localhost:3000/img/example1.jpeg",
+      "technologies": ["React", "TypeScript", "Node.js"],
+      "github": "https://github.com/user/project",
+      "demo": "https://demo-url.com"
+    }
+  ]
+}

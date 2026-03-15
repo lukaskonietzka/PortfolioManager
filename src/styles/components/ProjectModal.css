@@ -1,0 +1,98 @@
+/* Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    /* Das erzeugt automatisch Abstand am Rand */
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Modal Box */
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;   /* groß, aber nicht Fullscreen */
+    height: 100%;
+    max-height: 85vh;    /* oben/unten bleibt Rand */
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+    padding: 3rem 1.8rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* PDF Container */
+.pdf-container {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Controls */
+.pdf-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+
+.pdf-download-button {
+    margin-left: auto; /* nach rechts schieben */
+    padding: 6px 12px;
+    font-size: 16px;
+    background: #4a90e2;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pdf-download-button:hover {
+    background: #357ab8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-overlay {
+        padding: 16px;
+    }
+
+    .modal-content {
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 14px;
+        padding: 1.2rem;
+    }
+
+    .pdf-controls {
+        font-size: 14px;
+        gap: 16px;
+    }
+}

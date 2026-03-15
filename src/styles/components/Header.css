@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.header-text {
+    display: flex;
+    gap: 12px;             /* Abstand zwischen Name und Titel */
+    align-items: baseline;
+}
+
+.header-title{
+    font-size: 30px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 20px;
+    color: var(--text-light);
+}
+
+/* Avatar mit Glow */
+.avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+.header p {
+    margin-top: 8px;
+    color: var(--text-light);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1000px;
+}
