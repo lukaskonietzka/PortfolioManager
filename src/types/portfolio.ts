@@ -10,6 +10,38 @@ export interface Repository {
     url: string;
 }
 
+export interface WorkExperience {
+    period: string;
+    position: string;
+    company: string;
+    description: string;
+    highlights?: string[];
+}
+
+export interface ResearchEntry {
+    title: string;
+    period: string;
+    context: string;
+    description: string;
+    links?: Repository[];
+}
+
+export interface EducationEntry {
+    period: string;
+    qualification: string;
+    institution: string;
+    description?: string;
+}
+
+export interface CvConfig {
+    profile?: { summary: string; facts?: string[] };
+    experience?: WorkExperience[];
+    skills?: string[];
+    projects?: string[];
+    research?: ResearchEntry[];
+    education?: EducationEntry[];
+}
+
 export interface Project {
     id: string;
     title: string;
@@ -42,4 +74,5 @@ export interface PortfolioConfig {
     profile: Profile;
     theme: Theme;
     projects: Project[];
+    cv?: CvConfig;
 }

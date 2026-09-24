@@ -1,9 +1,9 @@
 {
   "profile": {
-    "title": "Architektur B.Eng.",
+    "title": "Softwareentwicklerin für Webanwendungen",
     "name": "Sara Resech",
     "image": "img/sara.jpeg",
-    "intro": "Ich entwickle klare, moderne Präsentationen für Architektur- und Bauprojekte – von Konzept über Visualisierung bis zur Dokumentation. Fokus: präzise Darstellung, saubere Typografie und starke Bildsprache."
+    "intro": "Ich entwickle klare, zugängliche Webanwendungen mit React und TypeScript. Mein Fokus liegt auf verständlichen Interfaces, sauberer Architektur und einer verlässlichen Umsetzung."
   },
   "theme": {
     "accent": "#ff6b3d",
@@ -17,6 +17,38 @@
     "cardRadius": 22,
     "shadow": "0 18px 40px rgba(15, 23, 42, 0.12)"
   },
+  "cv": {
+    "profile": {
+      "summary": "Softwareentwicklerin mit Schwerpunkt auf zugänglichen Webanwendungen und klaren digitalen Produkten.",
+      "facts": ["Webentwicklung", "Produktdesign", "Agile Zusammenarbeit"]
+    },
+    "experience": [
+      {
+        "period": "2022–heute",
+        "position": "Frontend-Entwicklerin",
+        "company": "Studio Digital",
+        "description": "Entwicklung und Weiterentwicklung webbasierter Produkte in interdisziplinären Teams.",
+        "highlights": ["React und TypeScript", "Komponentenbasierte UI-Entwicklung"]
+      }
+    ],
+    "skills": ["React", "TypeScript", "JavaScript", "HTML & CSS", "Git", "UI/UX"],
+    "projects": ["Portfolio Manager", "Interaktive Webanwendungen"],
+    "research": [
+      {
+        "title": "Zugängliche Interfaces im Alltag",
+        "period": "2021",
+        "context": "Eigenständige Untersuchung",
+        "description": "Analyse von Gestaltungs- und Entwicklungsentscheidungen für zugängliche digitale Produkte."
+      }
+    ],
+    "education": [
+      {
+        "period": "2018–2022",
+        "qualification": "B.Sc. Informatik",
+        "institution": "Hochschule für angewandte Wissenschaften"
+      }
+    ]
+  },
   "projects": [
     {
       "id": "1",
@@ -25,7 +57,7 @@
       "description": ["Gesamtkonzept, räumliche Organisation, Materialkonzept und Visualisierung.", "Fokus auf klare Wegeführung und robuste, wartungsarme Materialien."],
       "image": "img/bauhof_aichach.png",
       "technologies": ["InDesign", "Illustrator", "Rhino"],
-      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
+      "repositories": [{"label": "Frontend", "url": "https://github.com/user/project-frontend"}, {"label": "Backend", "url": "https://github.com/user/project-backend"}]
     },
     {
       "id": "2",
