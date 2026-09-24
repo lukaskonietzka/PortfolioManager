@@ -2,25 +2,38 @@ import { Project } from "../types/portfolio";
 import "../styles/components/ProjectCard.css"
 
 interface ProjectCardProps {
-    img?: string;
-    headline: string;
     project: Project;
     onClick: () => void;
-    backgroundColor: string;
-    borderColor: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
+    const tech = props.project.technologies ?? [];
+    const summary =
+        props.project.shortDescription?.trim() ||
+        props.project.description?.trim() ||
+        "Projektbeschreibung folgt in Kürze.";
+
     return (
-        <div className="card"
-             onClick={props.onClick}
-             style={{ background: props.backgroundColor, border: 'solid 1px ' + props.borderColor}}>
-            <img src={props.project.image}
-                 alt={props.project.title}/>
+        <div className="card" onClick={props.onClick}>
+            <div className="card-image">
+                <img
+                    src={props.project.image}
+                    alt={props.project.title}
+                />
+                {props.project.pdf && <span className="card-badge">PDF</span>}
+            </div>
 
             <div className="card-content">
-                <h3>{props.project.title}</h3>
-                <p>{props.project.shortDescription}</p>
+                <div className="card-title-row">
+                    <h3>{props.project.title}</h3>
+                    <span className="card-arrow">↗</span>
+                </div>
+                <p>{summary}</p>
+                <div className="card-tags">
+                    {tech.slice(0, 4).map((item) => (
+                        <span className="tag" key={item}>{item}</span>
+                    ))}
+                </div>
             </div>
         </div>
     );

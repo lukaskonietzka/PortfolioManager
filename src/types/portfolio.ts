@@ -18,11 +18,21 @@ export interface Project {
 }
 
 export interface Theme {
-    primaryColor: string;
-    backgroundColor: string;
-    cardColor: string;
-    cardBorder: boolean;
-    cardBorderColor: string;
+    primaryColor?: string;
+    backgroundColor?: string;
+    cardColor?: string;
+    cardBorder?: boolean;
+    cardBorderColor?: string;
+    accent?: string;
+    accentSoft?: string;
+    pageBackground?: string;
+    surface?: string;
+    surfaceStrong?: string;
+    text?: string;
+    mutedText?: string;
+    border?: string;
+    cardRadius?: number;
+    shadow?: string;
 }
 
 export interface PortfolioConfig {

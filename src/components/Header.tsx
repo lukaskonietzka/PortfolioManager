@@ -8,17 +8,21 @@ interface Props {
 export default function Header({ profile }: Props) {
     return (
         <div className="header">
-            <div>
-                <img src={profile.image}
-                     alt={profile.name}
-                     className="avatar" />
+            <div className="header-media">
+                <div className="avatar-ring" />
+                <img
+                    src={profile.image}
+                    alt={profile.name}
+                    className="avatar"
+                />
             </div>
-            <div>
+            <div className="header-content">
+                <div className="header-eyebrow">Portfolio</div>
                 <div className="header-text">
                     <h1>{profile.name}</h1>
-                    <div className={"header-title"}>{profile.title}</div>
+                    <span className="header-title">{profile.title}</span>
                 </div>
-                <p>{profile.intro}</p>
+                <p className="header-intro">{profile.intro}</p>
             </div>
         </div>
     );

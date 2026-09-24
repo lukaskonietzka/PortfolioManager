@@ -1,52 +1,103 @@
 .header {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: 40px;
     align-items: center;
-    gap: 32px;
-    margin-bottom: 64px;
+    padding: 32px;
+    border-radius: calc(var(--radius) + 8px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), transparent 65%);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.header-media {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.avatar-ring {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 107, 61, 0.25), transparent 65%);
+    filter: blur(6px);
+}
+
+.avatar {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 28%;
+    object-fit: cover;
+    border: 8px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-eyebrow {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    font-weight: 600;
 }
 
 .header-text {
     display: flex;
-    gap: 12px;             /* Abstand zwischen Name und Titel */
+    gap: 16px;
     align-items: baseline;
-}
-
-.header-title{
-    font-size: 30px;
+    flex-wrap: wrap;
+    margin: 8px 0 12px;
 }
 
 .header-text h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: clamp(32px, 4vw, 46px);
+    letter-spacing: -0.8px;
+    font-family: "Syne", "Space Grotesk", sans-serif;
 }
 
-.header-text p {
+.header-title {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    font-weight: 600;
+    color: var(--text);
+}
+
+.header-intro {
     margin: 0;
-    font-size: 20px;
-    color: var(--text-light);
-}
-
-/* Avatar mit Glow */
-.avatar {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-
-
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 40px;
-    letter-spacing: -1px;
-}
-
-.header p {
-    margin-top: 8px;
-    color: var(--text-light);
+    color: var(--muted);
     font-size: 18px;
     line-height: 1.6;
-    max-width: 1000px;
+    max-width: 640px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar {
+        width: min(260px, 100%);
+    }
 }
