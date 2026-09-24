@@ -10,7 +10,7 @@ export default function ProjectCard(props: ProjectCardProps) {
     const tech = props.project.technologies ?? [];
     const summary =
         props.project.shortDescription?.trim() ||
-        props.project.description?.trim() ||
+        props.project.description?.[0]?.trim() ||
         "Projektbeschreibung folgt in Kürze.";
 
     return (
@@ -20,7 +20,6 @@ export default function ProjectCard(props: ProjectCardProps) {
                     src={props.project.image}
                     alt={props.project.title}
                 />
-                {props.project.pdf && <span className="card-badge">PDF</span>}
             </div>
 
             <div className="card-content">

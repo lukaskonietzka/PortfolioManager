@@ -22,85 +22,73 @@
       "id": "1",
       "title": "Bauhof Aichach",
       "shortDescription": "Konzept + Ausführungsplanung für einen kommunalen Bauhof.",
-      "description": "Gesamtkonzept, räumliche Organisation, Materialkonzept und Visualisierung. Fokus auf klare Wegeführung und robuste, wartungsarme Materialien.",
+      "description": ["Gesamtkonzept, räumliche Organisation, Materialkonzept und Visualisierung.", "Fokus auf klare Wegeführung und robuste, wartungsarme Materialien."],
       "image": "img/bauhof_aichach.png",
       "technologies": ["InDesign", "Illustrator", "Rhino"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/bauhof_aichach_plaene.pdf"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "2",
       "title": "Helmut-Haller-Platz Energie Broschüre",
       "shortDescription": "Editorial Design für die energetische Sanierung.",
-      "description": "Broschüre mit Fokus auf verständliche Energiekennzahlen, klare Infografiken und konsistente Typografie. Gestaltung von Leitseiten und Detailplänen.",
+      "description": ["Broschüre mit Fokus auf verständliche Energiekennzahlen, klare Infografiken und konsistente Typografie.", "Gestaltung von Leitseiten und Detailplänen."],
       "image": "img/hhp_energie.png",
       "technologies": ["InDesign", "Figma"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/hhp_energie.pdf"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "3",
       "title": "SWA Turm Baumgartnerstraße",
       "shortDescription": "Visualisierung und Layout für Wohn- und Mischnutzung.",
-      "description": "3D-Visuals, Layouts für Projektbericht und Präsentation. Schwerpunkt: prägnante Visuals und ruhiges Layout.",
+      "description": ["3D-Visuals, Layouts für Projektbericht und Präsentation.", "Schwerpunkt: prägnante Visuals und ruhiges Layout."],
       "image": "img/baumgartner.png",
       "technologies": ["Rhino", "V-Ray", "InDesign"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/baum_strasse_plaene.pdf"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "4",
       "title": "Wicona",
       "shortDescription": "Konstruktionsmethodik und Detailblätter.",
-      "description": "Erstellung von Detailzeichnungen, Materialstudien und Layouts für Konstruktionsmethodiken. Fokus auf Verständlichkeit im Plan.",
+      "description": ["Erstellung von Detailzeichnungen, Materialstudien und Layouts für Konstruktionsmethodiken.", "Fokus auf Verständlichkeit im Plan."],
       "image": "img/example1.jpeg",
       "technologies": ["AutoCAD", "Illustrator"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/wicona.pdf"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "5",
       "title": "Wicona Broschüre",
       "shortDescription": "Kompaktes Datenblatt-Set für Produktvarianten.",
-      "description": "Konzeption und Umsetzung einer modularen Broschüre, mit konsistenten Raster- und Bildkonzepten.",
+      "description": ["Konzeption und Umsetzung einer modularen Broschüre, mit konsistenten Raster- und Bildkonzepten."],
       "image": "img/example1.jpeg",
       "technologies": ["InDesign", "Illustrator"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "6",
       "title": "Hellmut-Halle-Platz Pläne",
       "shortDescription": "Ausführungspläne und Baubeschreibung.",
-      "description": "Planaufbereitung, Bemaßung, Legenden und konsistente Layer-Struktur für die Abstimmung im Team.",
+      "description": ["Planaufbereitung, Bemaßung, Legenden und konsistente Layer-Struktur für die Abstimmung im Team."],
       "image": "img/example1.jpeg",
       "technologies": ["AutoCAD", "Revit"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "7",
       "title": "Helmut-Haller-Platz Modellfotos",
       "shortDescription": "Fotodokumentation des physischen Modells.",
-      "description": "Aufnahme- und Lichtkonzept, Nachbearbeitung und Präsentationslayout. Ziel: klare Lesbarkeit von Maßstab und Materialität.",
+      "description": ["Aufnahme- und Lichtkonzept, Nachbearbeitung und Präsentationslayout.", "Ziel: klare Lesbarkeit von Maßstab und Materialität."],
       "image": "img/example1.jpeg",
       "technologies": ["Lightroom", "Photoshop"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     },
     {
       "id": "8",
       "title": "IBA Summer School",
       "shortDescription": "Workshop-Dokumentation und Ausstellungs-Layouts.",
-      "description": "Gestaltung der Ergebnisdokumentation, Poster-Serie und visuelle Klammer über alle Sessions hinweg.",
+      "description": ["Gestaltung der Ergebnisdokumentation, Poster-Serie und visuelle Klammer über alle Sessions hinweg."],
       "image": "img/example1.jpeg",
       "technologies": ["InDesign", "Figma"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
+      "repositories": [{"label": "Repository", "url": "https://github.com/user/project"}]
     }
   ]
 }

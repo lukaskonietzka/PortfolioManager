@@ -50,6 +50,10 @@
     margin-bottom: 20px;
 }
 
+.modal-tabs { display: flex; gap: 6px; padding: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; }
+.modal-tabs button { border: 0; background: transparent; border-radius: 999px; padding: 8px 12px; color: var(--muted); cursor: pointer; }
+.modal-tabs button.active { background: var(--accent); color: white; }
+
 .modal-title-row {
     display: flex;
     align-items: center;
@@ -81,67 +85,22 @@
     gap: 10px;
 }
 
-/* PDF Container */
-.pdf-container {
+.modal-body {
     flex: 1;
     width: 100%;
     overflow: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 }
 
-/* Controls */
-.pdf-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding-top: 1rem;
-    font-size: 16px;
-}
-
-.pdf-controls button {
-    border: 1px solid var(--border);
-    background: var(--surface);
-    border-radius: 999px;
-    padding: 8px 14px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.pdf-controls button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.pdf-loading {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    background: rgba(255, 255, 255, 0.85);
-    color: #333;
-    font-size: 16px;
-    text-align: center;
-}
-
-.pdf-spinner {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 3px solid #d0d6dd;
-    border-top-color: var(--accent);
-    animation: pdf-spin 0.9s linear infinite;
-}
-
-@keyframes pdf-spin {
-    to { transform: rotate(360deg); }
-}
+.modal-image { display: block; max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; }
+.modal-description { width: min(720px, 100%); color: var(--muted); line-height: 1.7; }
+.modal-description p { margin: 0 0 1rem; }
+.repository-list { display: grid; gap: 12px; width: min(720px, 100%); }
+.repository-link { display: flex; justify-content: space-between; padding: 16px 18px; border: 1px solid var(--border); border-radius: 12px; color: var(--text); text-decoration: none; }
+.repository-link:hover { border-color: var(--accent); }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -156,8 +115,8 @@
         padding: 1.2rem;
     }
 
-    .pdf-controls {
-        font-size: 14px;
-        gap: 16px;
+    .modal-tabs {
+        width: 100%;
+        justify-content: center;
     }
 }

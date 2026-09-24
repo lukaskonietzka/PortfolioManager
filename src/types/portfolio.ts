@@ -5,16 +5,19 @@ export interface Profile {
     intro: string;
 }
 
+export interface Repository {
+    label: string;
+    url: string;
+}
+
 export interface Project {
     id: string;
     title: string;
     shortDescription: string;
-    description: string;
+    description?: string[];
     image: string;
     technologies: string[];
-    github?: string;
-    demo?: string;
-    pdf?: string;
+    repositories?: Repository[];
 }
 
 export interface Theme {
