@@ -40,7 +40,7 @@ test("switches between portfolio and the configured CV view", () => {
     expect(screen.getByRole("heading", { name: "Kurzprofil" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Berufserfahrung" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Kenntnisse und Technologien" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Projekte" })).toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "Projekte" })).not.toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Forschung" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Ausbildung" })).toBeInTheDocument();
     expect(screen.queryByText("Ausgewählte Projekte")).not.toBeInTheDocument();

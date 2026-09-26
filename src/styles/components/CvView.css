@@ -1,3 +1,5 @@
+.cv-section-wrapper { margin-top: 48px; }
+.cv-section-header { margin-bottom: 28px; }
 .cv-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 28px; align-items: start; }
 .cv-timeline { position: sticky; top: 24px; display: grid; gap: 8px; }
 .cv-timeline button { display: grid; grid-template-columns: 38px 1fr; align-items: center; gap: 8px; border: 0; border-left: 2px solid var(--border); padding: 10px 8px; background: transparent; color: var(--muted); text-align: left; cursor: pointer; font: inherit; }
