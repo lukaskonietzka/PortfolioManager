@@ -67,3 +67,9 @@ Die bestehenden React-Testing-Library-Tests sind der naheliegende Test-Seam für
 - Die konkreten JSON-Feldnamen für Repository-Referenzen, CV-Einträge und Navigation werden bei der Umsetzung an die bestehenden TypeScript-Typen und Konventionen angepasst.
 - Es ist noch nicht festgelegt, ob Repository-Referenzen zusätzlich einen Anbieter oder eine frei sichtbare Bezeichnung neben URL und Linktext benötigen.
 - Es ist noch nicht festgelegt, ob die CV-Ansicht auf kleinen Bildschirmen eine abweichende Darstellung benötigt; die bestehende responsive Gestaltung soll als Ausgangspunkt dienen.
+
+## Ergänzung: CV-Timeline und Responsive App
+
+Die CV-Ansicht erhält eine visuelle Timeline für die sechs Kapitel in fester Reihenfolge. Die Timeline zeigt die Nummern 01–06, steht auf größeren Bildschirmen links neben dem Inhalt und bleibt beim Scrollen sticky sichtbar. Jeder Punkt scrollt bei Aktivierung weich zum zugehörigen Kapitel. Während des Scrollens wird der aktive Punkt automatisch anhand des sichtbaren Kapitels aktualisiert; dafür wird eine IntersectionObserver-basierte Beobachtung verwendet.
+
+Auf kleinen Bildschirmen wird die Timeline als kompakte horizontale Nummernleiste oberhalb der CV-Inhalte dargestellt. Die gesamte App bleibt responsiv: Portfolio, Projektkarten, Header und Navigation, Projekt-Modal, CV-Inhalte und Timeline dürfen auf kleinen Bildschirmen keinen horizontalen Überlauf erzeugen und müssen nutzbar bleiben.

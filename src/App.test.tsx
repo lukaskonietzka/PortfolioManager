@@ -48,3 +48,15 @@ test("switches between portfolio and the configured CV view", () => {
     fireEvent.click(screen.getByRole("button", { name: "Portfolio" }));
     expect(screen.getByText("Ausgewählte Projekte")).toBeInTheDocument();
 });
+
+test("provides a numbered, keyboard-accessible CV timeline", () => {
+    HTMLElement.prototype.scrollIntoView = jest.fn();
+    render(<PortfolioManager />);
+    fireEvent.click(screen.getByRole("button", { name: "Lebenslauf" }));
+
+    const timelineButton = screen.getByRole("button", { name: "01 Kurzprofil" });
+    expect(timelineButton).toHaveAttribute("aria-current", "step");
+    fireEvent.click(screen.getByRole("button", { name: "02 Berufserfahrung" }));
+    expect(screen.getByRole("button", { name: "02 Berufserfahrung" })).toHaveAttribute("aria-current", "step");
+    expect(HTMLElement.prototype.scrollIntoView).toHaveBeenCalled();
+});

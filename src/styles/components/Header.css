@@ -105,3 +105,10 @@
         width: min(260px, 100%);
     }
 }
+
+@media (max-width: 480px) {
+    .header { padding: 20px; gap: 24px; }
+    .header-navigation { flex-wrap: wrap; margin-bottom: 12px; }
+    .header-intro { font-size: 16px; }
+    .header-text h1 { font-size: 32px; }
+}

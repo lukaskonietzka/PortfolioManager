@@ -118,5 +118,10 @@
     .modal-tabs {
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
     }
+
+    .modal-header h2 { padding-right: 28px; font-size: 22px; }
+    .modal-body { align-items: flex-start; }
+    .modal-image { max-height: 52vh; }
 }
