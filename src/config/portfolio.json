@@ -1,9 +1,9 @@
 {
   "profile": {
-    "title": "Softwareentwicklerin für Webanwendungen",
-    "name": "Sara Resech",
+    "title": "Softwareentwickler",
+    "name": "Lukas Konietzka",
     "image": "img/sara.jpeg",
-    "intro": "Ich entwickle klare, zugängliche Webanwendungen mit React und TypeScript. Mein Fokus liegt auf verständlichen Interfaces, sauberer Architektur und einer verlässlichen Umsetzung."
+    "intro": "Softwareentwickler mit Erfahrung in Webentwicklung, KI-Agenten, Softwarearchitektur und der Entwicklung wissenschaftlicher Software."
   },
   "theme": {
     "accent": "#ff6b3d",
@@ -19,33 +19,65 @@
   },
   "cv": {
     "profile": {
-      "summary": "Softwareentwicklerin mit Schwerpunkt auf zugänglichen Webanwendungen und klaren digitalen Produkten.",
-      "facts": ["Webentwicklung", "Produktdesign", "Agile Zusammenarbeit"]
+      "summary": "Softwareentwickler mit Schwerpunkt auf Webanwendungen, Softwarearchitektur und der Entwicklung von KI-Agenten.",
+      "facts": ["Wohnort: Augsburg", "Deutsch (Muttersprache)", "Englisch (B2)", "Spanisch (A1)"]
     },
     "experience": [
       {
-        "period": "2022–heute",
-        "position": "Frontend-Entwicklerin",
-        "company": "Studio Digital",
-        "description": "Entwicklung und Weiterentwicklung webbasierter Produkte in interdisziplinären Teams.",
-        "highlights": ["React und TypeScript", "Komponentenbasierte UI-Entwicklung"]
+        "period": "2025–heute",
+        "position": "Softwareentwickler",
+        "company": "Sonntag IT Solutions",
+        "description": "Architektur und Design von Softwareprodukten sowie professionelle Entwicklung mit KI-Agenten.",
+        "highlights": ["Entwicklung großer Enterprise-Softwarelösungen im Web"]
+      },
+      {
+        "period": "2023–2025",
+        "position": "Werkstudent",
+        "company": "Sonntag IT Solutions",
+        "description": "Grundlagen der Softwareentwicklung und Mitarbeit in professionellen Scrum-Teams."
+      },
+      {
+        "period": "2022–2023",
+        "position": "Tutor und Übungsgruppenleiter",
+        "company": "Technische Hochschule Augsburg",
+        "description": "Betreuung von Studierenden in Mathematik I und II sowie Software Engineering I.",
+        "highlights": ["Tutor für Mathematik I und II", "Tutor für Software Engineering I"]
+      },
+      {
+        "period": "2017–2019",
+        "position": "Fachinformatiker für Anwendungsentwicklung",
+        "company": "Siemens AG Augsburg",
+        "description": "Erstellung von Dokumentationen und Spezifikationen, Programmierung von Werkzeug- und Produktionsmaschinen sowie Kundenbetreuung im gesamten Bundesgebiet."
       }
     ],
-    "skills": ["React", "TypeScript", "JavaScript", "HTML & CSS", "Git", "UI/UX"],
-    "projects": ["Portfolio Manager", "Interaktive Webanwendungen"],
+    "skills": ["STEP 7", "JavaScript", "TypeScript", "C", "C++", "PHP", "LaTeX", "Versionskontrolle", "GitHub", "Webentwicklung", "API-Entwicklung", "Docker", "Kubernetes", "TYPO3", "Agile Entwicklung", "Scrum"],
+    "projects": [],
     "research": [
       {
-        "title": "Zugängliche Interfaces im Alltag",
-        "period": "2021",
-        "context": "Eigenständige Untersuchung",
-        "description": "Analyse von Gestaltungs- und Entwicklungsentscheidungen für zugängliche digitale Produkte."
+        "title": "Forschung am LMU Klinikum für Zahnerhaltung",
+        "period": "2024–heute",
+        "context": "LMU Klinikum für Zahnerhaltung",
+        "description": "Entwicklung von Softwarekomponenten für die Kariesforschung und Entwicklung eines Algorithmus zum automatischen Segmentieren von durch künstliche Intelligenz erzeugten µ-CT-Bildern. Bereits als Co-Autor an einem wissenschaftlichen Paper veröffentlicht."
       }
     ],
     "education": [
       {
-        "period": "2018–2022",
-        "qualification": "B.Sc. Informatik",
-        "institution": "Hochschule für angewandte Wissenschaften"
+        "period": "2021–2025",
+        "qualification": "Bachelor of Science, Informatik (1,8)",
+        "institution": "Technische Hochschule Augsburg",
+        "description": "Schwerpunkt: Softwareentwicklung"
+      },
+      {
+        "period": "2019–2021",
+        "qualification": "Staatlich geprüfter Techniker Mechatronik (1,8)",
+        "institution": "Technische Hochschule Augsburg",
+        "description": "Schwerpunkt: Mikrocontroller; Abitur (1,5)"
+      },
+      {
+        "period": "2013–2017",
+        "qualification": "Facharbeiterbrief Mechatronik",
+        "institution": "Siemens AG Augsburg",
+        "description": "Schwerpunkt: Werkzeug- und Produktionsmaschinen; PLC-Programmierung"
       }
     ]
   },
