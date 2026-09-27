@@ -103,7 +103,7 @@
       "id": "slicer",
       "title": "Slicer",
       "shortDescription": "Open-Source-Projekt, an dem ich aktuell arbeite.",
-      "description": [],
+      "description": ["3D Slicer ist eine kostenlose Open-Source-Software zur Visualisierung, Verarbeitung, Segmentierung, Registrierung und Analyse medizinischer, biomedizinischer und anderer 3D-Bilder und -Modelle. Darüber hinaus ermöglicht die Software die Planung und Navigation bildgestützter medizinischer Eingriffe."],
       "image": "img/3D-Slicer-Mark.svg",
       "technologies": ["C++", "CMake", "Python"],
       "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/Slicer"}]
@@ -112,7 +112,7 @@
       "id": "slicer-tooth-analyser",
       "title": "SlicerToothAnalyser",
       "shortDescription": "3D-Slicer-Erweiterung zur Verarbeitung, Segmentierung und Analyse von Zahn-µCT-Daten.",
-      "description": [],
+      "description": ["ToothAnalyserMicroCT ist eine in Entwicklung befindliche Erweiterung für die Open-Source-Software **3D Slicer**, die speziell für die Verarbeitung und Analyse von Mikro-Computertomographie-Aufnahmen (Micro-CT) von Zähnen entwickelt wurde. Sie bietet spezialisierte Funktionen zur Vorverarbeitung, Segmentierung und Analyse, die gezielt auf die Untersuchung der Zahnanatomie und pathologischer Veränderungen ausgerichtet sind. Das Projekt entstand in Zusammenarbeit zwischen dem **Fachbereich Informatik der Technischen Hochschule Augsburg** und der **Klinik und Poliklinik für Zahnerhaltung, Parodontologie und Digitale Zahnmedizin des LMU Klinikums München**. Durch automatisierte und teilautomatisierte Workflows unterstützt ToothAnalyserMicroCT die Durchführung und Weiterentwicklung fortschrittlicher zahnmedizinischer Forschung."],
       "image": "img/SlicerToothAnalyser.png",
       "technologies": ["Python", "CMake"],
       "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/SlicerToothAnalyser"}]
@@ -130,34 +130,10 @@
       "id": "eco-heroes",
       "title": "Eco Heroes",
       "shortDescription": "VR-Speil für das Büro für Nachhaltigkeit",
-      "description": [],
+      "description": ["Auf spielerische Art und Weise sollen Schülerinnen und Schülern die in den Zukunftsleitlinien der Stadt Augsburg verankerten Nachhaltigkeitsziele vermittelt werden. Im Zuge dieses Projekts entstehen in Zusammenarbeit mit dem Nachhaltigkeitsbüro Augsburg und dem Schülerlabor der Universität Augsburg vier Virtual Reality Minispiele zu jeweils einer der vier Nachhaltigkeitsdimensionen Ökologie, Wirtschaft, Soziales und Kultur."],
       "image": "img/ecoheroes.png",
       "technologies": ["C#", "Unity"],
       "repositories": [{"label": "GitHub", "url": "https://github.com/EcoHeroes-VR/EcoHeroes"}]
-    },
-    {
-      "id": "tooth-analyser-sample-data",
-      "title": "ToothAnalyserSampleData",
-      "shortDescription": "Beispieldaten für die 3D-Slicer-Erweiterung ToothAnalyser.",
-      "description": [],
-      "technologies": ["Medical Imaging", "3D Slicer"],
-      "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/ToothAnalyserSampleData"}]
-    },
-    {
-      "id": "dvaseminar",
-      "title": "DVASeminar",
-      "shortDescription": "Seminararbeit zu SQL-Analytikerweiterungen.",
-      "description": [],
-      "technologies": ["LaTeX", "SQL"],
-      "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/dvaseminar"}]
-    },
-    {
-      "id": "djangoreact",
-      "title": "DjangoReact",
-      "shortDescription": "Webprojekt mit Django und React.",
-      "description": [],
-      "technologies": ["TypeScript", "Django", "React"],
-      "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/DjangoReact"}]
     }
   ]
 }
