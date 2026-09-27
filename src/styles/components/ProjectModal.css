@@ -54,22 +54,9 @@
 .modal-tabs button { border: 0; background: transparent; border-radius: 999px; padding: 8px 12px; color: var(--muted); cursor: pointer; }
 .modal-tabs button.active { background: var(--accent); color: white; }
 
-.modal-title-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .modal-header h2 {
     margin: 0;
     font-size: 26px;
-}
-
-.modal-header p {
-    margin: 10px 0 0;
-    color: var(--muted);
-    max-width: 640px;
-    line-height: 1.6;
 }
 
 .modal-tags {
@@ -77,12 +64,6 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 14px;
-}
-
-.modal-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
 .modal-body {
@@ -100,8 +81,6 @@
 .modal-copy { min-width: 0; color: var(--muted); line-height: 1.7; overflow: auto; max-height: 58vh; }
 .modal-copy p { margin: 0 0 1rem; }
 .modal-empty { font-style: italic; }
-.modal-description { width: min(720px, 100%); color: var(--muted); line-height: 1.7; }
-.modal-description p { margin: 0 0 1rem; }
 .repository-list { display: grid; gap: 12px; width: 100%; }
 .repository-list h3 { margin: 8px 0 0; color: var(--text); }
 .repository-link { display: flex; justify-content: space-between; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
