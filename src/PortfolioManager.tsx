@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import Header from "./components/Header";
 import ProjectCard from "./components/ProjectCard";
 import ProjectModal from "./components/ProjectModal";
+import CvView from "./components/CvView";
 import config from "./config/portfolio.json";
 import { PortfolioConfig, Project } from "./types/portfolio";
 
@@ -10,6 +11,7 @@ const typedConfig = config as PortfolioConfig;
 
 function PortfolioManager() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const [view, setView] = useState<"portfolio" | "cv">("portfolio");
 
     const themeVars = useMemo(() => {
         const theme = typedConfig.theme ?? {};
@@ -25,6 +27,7 @@ function PortfolioManager() {
         return {
             "--accent": accent,
             "--accent-soft": accentSoft,
+            "--butterscotch": theme.butterscotch ?? "#d6a84f",
             "--page-bg": pageBackground,
             "--surface": theme.surface ?? theme.cardColor ?? "rgba(255, 255, 255, 0.86)",
             "--surface-strong": theme.surfaceStrong ?? "#ffffff",
@@ -40,9 +43,9 @@ function PortfolioManager() {
         <div className="app" style={themeVars}>
             <div className="app-noise" aria-hidden="true" />
             <div className="container">
-                <Header profile={typedConfig.profile} />
+                <Header profile={typedConfig.profile} view={view} onViewChange={setView} />
 
-                <section className="section">
+                {view === "cv" ? <CvView cv={typedConfig.cv} /> : <section className="section">
                     <div className="section-header">
                         <div>
                             <h2>Ausgewählte Projekte</h2>
@@ -62,7 +65,7 @@ function PortfolioManager() {
                             />
                         ))}
                     </div>
-                </section>
+                </section>}
 
                 {selectedProject && (
                     <ProjectModal

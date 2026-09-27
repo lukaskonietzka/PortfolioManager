@@ -1,14 +1,15 @@
 {
   "profile": {
-    "title": "Architektur B.Eng.",
-    "name": "Sara Resech",
-    "image": "img/sara.jpeg",
-    "intro": "Ich entwickle klare, moderne Präsentationen für Architektur- und Bauprojekte – von Konzept über Visualisierung bis zur Dokumentation. Fokus: präzise Darstellung, saubere Typografie und starke Bildsprache."
+    "title": "Softwareentwickler",
+    "name": "Lukas Konietzka",
+    "image": "img/me_sticker.png",
+    "intro": "Softwareentwickler mit Erfahrung in Webentwicklung, KI-Agenten, Softwarearchitektur und der Entwicklung wissenschaftlicher Software."
   },
   "theme": {
-    "accent": "#ff6b3d",
-    "accentSoft": "rgba(255, 107, 61, 0.18)",
-    "pageBackground": "radial-gradient(1200px 600px at 10% -10%, #ffe6dc 0%, rgba(255, 230, 220, 0) 60%),radial-gradient(900px 500px at 90% 0%, #e6f0ff 0%, rgba(230, 240, 255, 0) 55%),linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%)",
+    "accent": "#087f6f",
+    "accentSoft": "rgba(8, 127, 111, 0.10)",
+    "butterscotch": "#d6a84f",
+    "pageBackground": "radial-gradient(900px 500px at 92% -8%, rgba(214, 168, 79, 0.12) 0%, rgba(214, 168, 79, 0) 58%),radial-gradient(1200px 600px at 10% -10%, #dff5ef 0%, rgba(223, 245, 239, 0) 60%),linear-gradient(180deg, #ffffff 0%, #f2faf8 100%)",
     "surface": "rgba(255, 255, 255, 0.9)",
     "surfaceStrong": "#ffffff",
     "text": "#0f172a",
@@ -17,90 +18,122 @@
     "cardRadius": 22,
     "shadow": "0 18px 40px rgba(15, 23, 42, 0.12)"
   },
+  "cv": {
+    "profile": {
+      "summary": "Meine berufliche Laufbahn begann ich in der Industrie als PLC-Programmierer bei der Siemens AG. In dieser Position war ich deutschlandweit im Einsatz und verantwortlich für die Inbetriebnahme und Programmierung von Werkzeug- und Produktionsmaschinen. Die abwechslungsreiche Tätigkeit vor Ort ermöglichte mir, umfassende praktische Erfahrungen in der Automatisierungstechnik zu sammeln und ein tiefes Verständnis für industrielle Prozesse und Anlagen zu entwickeln. Im weiteren Verlauf meiner Tätigkeit spezialisierte ich mich zunehmend auf die Programmierung und Inbetriebnahme von Krananlagen.",
+      "facts": ["Wohnort: Augsburg", "Deutsch (Muttersprache)", "Englisch (B2)", "Spanisch (A1)"]
+    },
+    "experience": [
+      {
+        "period": "2025–heute",
+        "position": "Softwareentwickler",
+        "company": "Sonntag IT Solutions",
+        "description": "Bei der Sonntag IT Solutions bin ich maßgeblich an der Konzeption, Architektur und Entwicklung moderner Softwarelösungen beteiligt. Zu meinen Aufgaben gehören die Entwicklung und Gestaltung hochwertiger Softwareprodukte, die Erstellung technischer Dokumentationen sowie der Einsatz von KI-Agenten zur Entwicklung innovativer Lösungen. Dabei arbeite ich in kleinen, agilen Scrum-Teams und legte besonderen Wert auf eine enge Zusammenarbeit mit den Kunden sowie die praxisnahe Umsetzung ihrer Anforderungen.",
+        "highlights": [
+          "Entwicklung großer Enterprise-Softwarelösungen im Web",
+          "Prozessautomatisierungen",
+          "Eintwicklung medizinischer Softwareprodukte",
+          "Entwicklung von Softwarekomponenten für die Bauindustrie",
+          "Professionelle KI-Gestützte Entwicklung"
+        ]
+      },
+      {
+        "period": "2023–2025",
+        "position": "Werkstudent",
+        "company": "Sonntag IT Solutions",
+        "description": "Meine Tätigkeit als Werkstudent bei der Sonntag IT Solutions war mein Einstieg in die professionelle Webentwicklung. In dieser Zeit konnte ich erstmals umfassende Einblicke in die grundlegenden Abläufe und Prozesse der Softwareentwicklung gewinnen und wertvolle praktische Erfahrungen sammeln. Gleichzeitig war ich bereits Teil meines ersten größeren Softwareprojekts, in dem ich mich aktiv einbringen und meine Kenntnisse direkt in der Praxis anwenden und weiterentwickeln konnte."
+      },
+      {
+        "period": "2022–2023",
+        "position": "Tutor und Übungsgruppenleiter",
+        "company": "Technische Hochschule Augsburg",
+        "description": "Bereits während meines Studiums begeisterten mich insbesondere einige Fachbereiche, in denen ich mein Wissen gerne mit anderen teilen und gleichzeitig einen Beitrag für nachfolgende Studierende leisten wollte. Aus diesem Interesse heraus begann ich meine Tätigkeit als Tutor für die Vorlesungen Mathematik I und II sowie Software Engineering I. Dabei konnte ich nicht nur mein eigenes Verständnis der Inhalte vertiefen, sondern auch erste Erfahrungen in der Wissensvermittlung und Betreuung von Studierenden sammeln.",
+        "highlights": [
+          "Tutor für Mathematik I und II",
+          "Tutor für Software Engineering I"
+        ]
+      },
+      {
+        "period": "2017–2019",
+        "position": "PLC Programmierer",
+        "company": "SIEMENS AG Augsburg",
+        "description": "Meine berufliche Laufbahn begann ich in der Industrie als PLC-Programmierer bei der Siemens AG. In dieser Position war ich deutschlandweit im Einsatz und verantwortlich für die Inbetriebnahme und Programmierung von Werkzeug- und Produktionsmaschinen. Die abwechslungsreiche Tätigkeit vor Ort ermöglichte mir, umfassende praktische Erfahrungen in der Automatisierungstechnik zu sammeln und ein tiefes Verständnis für industrielle Prozesse und Anlagen zu entwickeln. Im weiteren Verlauf meiner Tätigkeit spezialisierte ich mich zunehmend auf die Programmierung und Inbetriebnahme von Krananlagen.",
+        "highlights": [
+          "PLC-Programmierung",
+          "Inbetriebnahme",
+          "Erstellen von Benutzerhandbüchern",
+          "Hardwaretechnik und Verdrahtungstechnik einer SPS",
+          "Elektornik- und Schaltschranktechnik"
+        ]
+      }
+    ],
+    "skills": ["STEP 7", "JavaScript", "TypeScript", "C", "C++", "PHP", "LaTeX", "Versionskontrolle", "GitHub", "Webentwicklung", "API-Entwicklung", "Docker", "Kubernetes", "TYPO3", "Agile Entwicklung", "Scrum"],
+    "projects": [],
+    "research": [
+      {
+        "title": "Forschung am LMU Klinikum für Zahnerhaltung",
+        "period": "2024–heute",
+        "context": "LMU Klinikum für Zahnerhaltung",
+        "description": "Entwicklung von Softwarekomponenten für die Kariesforschung und Entwicklung eines Algorithmus zum automatischen Segmentieren von durch künstliche Intelligenz erzeugten µ-CT-Bildern. Bereits als Co-Autor an einem wissenschaftlichen Paper veröffentlicht."
+      }
+    ],
+    "education": [
+      {
+        "period": "2021–2025",
+        "qualification": "Bachelor of Science, Informatik (1,8)",
+        "institution": "Technische Hochschule Augsburg",
+        "description": "Schwerpunkt: Softwareentwicklung"
+      },
+      {
+        "period": "2019–2021",
+        "qualification": "Staatlich geprüfter Techniker Mechatronik (1,8)",
+        "institution": "Technikerschule Augsburg",
+        "description": "Schwerpunkt: Mikrocontroller; Abitur (1,5)"
+      },
+      {
+        "period": "2013–2017",
+        "qualification": "Facharbeiterbrief Mechatronik",
+        "institution": "Siemens AG",
+        "description": "Schwerpunkt: Werkzeug- und Produktionsmaschinen; PLC-Programmierung"
+      }
+    ]
+  },
   "projects": [
     {
-      "id": "1",
-      "title": "Bauhof Aichach",
-      "shortDescription": "Konzept + Ausführungsplanung für einen kommunalen Bauhof.",
-      "description": "Gesamtkonzept, räumliche Organisation, Materialkonzept und Visualisierung. Fokus auf klare Wegeführung und robuste, wartungsarme Materialien.",
-      "image": "img/bauhof_aichach.png",
-      "technologies": ["InDesign", "Illustrator", "Rhino"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/bauhof_aichach_plaene.pdf"
+      "id": "slicer",
+      "title": "Slicer",
+      "shortDescription": "Open-Source-Projekt, an dem ich aktuell arbeite.",
+      "description": ["3D Slicer ist eine kostenlose Open-Source-Software zur Visualisierung, Verarbeitung, Segmentierung, Registrierung und Analyse medizinischer, biomedizinischer und anderer 3D-Bilder und -Modelle. Darüber hinaus ermöglicht die Software die Planung und Navigation bildgestützter medizinischer Eingriffe."],
+      "image": "img/3D-Slicer-Mark.svg",
+      "technologies": ["C++", "CMake", "Python"],
+      "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/Slicer"}]
     },
     {
-      "id": "2",
-      "title": "Helmut-Haller-Platz Energie Broschüre",
-      "shortDescription": "Editorial Design für die energetische Sanierung.",
-      "description": "Broschüre mit Fokus auf verständliche Energiekennzahlen, klare Infografiken und konsistente Typografie. Gestaltung von Leitseiten und Detailplänen.",
-      "image": "img/hhp_energie.png",
-      "technologies": ["InDesign", "Figma"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/hhp_energie.pdf"
+      "id": "slicer-tooth-analyser",
+      "title": "SlicerToothAnalyser",
+      "shortDescription": "3D-Slicer-Erweiterung zur Verarbeitung, Segmentierung und Analyse von Zahn-µCT-Daten.",
+      "description": ["ToothAnalyserMicroCT ist eine in Entwicklung befindliche Erweiterung für die Open-Source-Software **3D Slicer**, die speziell für die Verarbeitung und Analyse von Mikro-Computertomographie-Aufnahmen (Micro-CT) von Zähnen entwickelt wurde. Sie bietet spezialisierte Funktionen zur Vorverarbeitung, Segmentierung und Analyse, die gezielt auf die Untersuchung der Zahnanatomie und pathologischer Veränderungen ausgerichtet sind. Das Projekt entstand in Zusammenarbeit zwischen dem **Fachbereich Informatik der Technischen Hochschule Augsburg** und der **Klinik und Poliklinik für Zahnerhaltung, Parodontologie und Digitale Zahnmedizin des LMU Klinikums München**. Durch automatisierte und teilautomatisierte Workflows unterstützt ToothAnalyserMicroCT die Durchführung und Weiterentwicklung fortschrittlicher zahnmedizinischer Forschung."],
+      "image": "img/SlicerToothAnalyser.png",
+      "technologies": ["Python", "CMake"],
+      "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/SlicerToothAnalyser"}]
     },
     {
-      "id": "3",
-      "title": "SWA Turm Baumgartnerstraße",
-      "shortDescription": "Visualisierung und Layout für Wohn- und Mischnutzung.",
-      "description": "3D-Visuals, Layouts für Projektbericht und Präsentation. Schwerpunkt: prägnante Visuals und ruhiges Layout.",
-      "image": "img/baumgartner.png",
-      "technologies": ["Rhino", "V-Ray", "InDesign"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/baum_strasse_plaene.pdf"
+      "id": "green-assistant",
+      "title": "Green Assistant",
+      "shortDescription": "Webbasierter und interaktiver Chatbot für das Nachhaltigkeitsbüro in Augsburg.",
+      "description": ["Der Chatbot GreenAssistant gibt praktische Tipps für einen nachhaltigeren Alltag und vermittelt dabei die spezifischen Nachhaltigkeitsziele Augsburgs. Mithilfe modernster KI-Technologien werden Nutzerfragen individuell und präzise beantwortet. Dieses innovative Open-Source-Projekt macht nachhaltiges Handeln für alle zugänglich."],
+      "image": "img/green-assistant.gif",
+      "technologies": ["TypeScript", "React", "Python", "LAMA"],
+      "repositories": [{"label": "GitHub", "url": "https://github.com/GreenAssistant/GreenAssistant"}]
     },
     {
-      "id": "4",
-      "title": "Wicona",
-      "shortDescription": "Konstruktionsmethodik und Detailblätter.",
-      "description": "Erstellung von Detailzeichnungen, Materialstudien und Layouts für Konstruktionsmethodiken. Fokus auf Verständlichkeit im Plan.",
-      "image": "img/example1.jpeg",
-      "technologies": ["AutoCAD", "Illustrator"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com",
-      "pdf": "pdf/wicona.pdf"
-    },
-    {
-      "id": "5",
-      "title": "Wicona Broschüre",
-      "shortDescription": "Kompaktes Datenblatt-Set für Produktvarianten.",
-      "description": "Konzeption und Umsetzung einer modularen Broschüre, mit konsistenten Raster- und Bildkonzepten.",
-      "image": "img/example1.jpeg",
-      "technologies": ["InDesign", "Illustrator"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
-    },
-    {
-      "id": "6",
-      "title": "Hellmut-Halle-Platz Pläne",
-      "shortDescription": "Ausführungspläne und Baubeschreibung.",
-      "description": "Planaufbereitung, Bemaßung, Legenden und konsistente Layer-Struktur für die Abstimmung im Team.",
-      "image": "img/example1.jpeg",
-      "technologies": ["AutoCAD", "Revit"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
-    },
-    {
-      "id": "7",
-      "title": "Helmut-Haller-Platz Modellfotos",
-      "shortDescription": "Fotodokumentation des physischen Modells.",
-      "description": "Aufnahme- und Lichtkonzept, Nachbearbeitung und Präsentationslayout. Ziel: klare Lesbarkeit von Maßstab und Materialität.",
-      "image": "img/example1.jpeg",
-      "technologies": ["Lightroom", "Photoshop"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
-    },
-    {
-      "id": "8",
-      "title": "IBA Summer School",
-      "shortDescription": "Workshop-Dokumentation und Ausstellungs-Layouts.",
-      "description": "Gestaltung der Ergebnisdokumentation, Poster-Serie und visuelle Klammer über alle Sessions hinweg.",
-      "image": "img/example1.jpeg",
-      "technologies": ["InDesign", "Figma"],
-      "github": "https://github.com/user/project",
-      "demo": "https://demo-url.com"
+      "id": "eco-heroes",
+      "title": "Eco Heroes",
+      "shortDescription": "VR-Speil für das Büro für Nachhaltigkeit",
+      "description": ["Auf spielerische Art und Weise sollen Schülerinnen und Schülern die in den Zukunftsleitlinien der Stadt Augsburg verankerten Nachhaltigkeitsziele vermittelt werden. Im Zuge dieses Projekts entstehen in Zusammenarbeit mit dem Nachhaltigkeitsbüro Augsburg und dem Schülerlabor der Universität Augsburg vier Virtual Reality Minispiele zu jeweils einer der vier Nachhaltigkeitsdimensionen Ökologie, Wirtschaft, Soziales und Kultur."],
+      "image": "img/ecoheroes.png",
+      "technologies": ["C#", "Unity"],
+      "repositories": [{"label": "GitHub", "url": "https://github.com/EcoHeroes-VR/EcoHeroes"}]
     }
   ]
 }
