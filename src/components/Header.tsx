@@ -13,7 +13,7 @@ export default function Header({ profile, view, onViewChange }: Props) {
             <div className="header-media">
                 <div className="avatar-ring" />
                 <img
-                    src={profile.image}
+                    src={`${process.env.PUBLIC_URL}/${profile.image}`}
                     alt={profile.name}
                     className="avatar"
                 />

@@ -47,8 +47,8 @@ export interface Project {
     title: string;
     shortDescription: string;
     description?: string[];
-    image: string;
-    technologies: string[];
+    image?: string;
+    technologies?: string[];
     repositories?: Repository[];
 }
 
@@ -60,6 +60,7 @@ export interface Theme {
     cardBorderColor?: string;
     accent?: string;
     accentSoft?: string;
+    butterscotch?: string;
     pageBackground?: string;
     surface?: string;
     surfaceStrong?: string;

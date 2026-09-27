@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CvConfig } from "../types/portfolio";
 import "../styles/components/CvView.css";
 
@@ -15,7 +15,15 @@ const chapters = [
 type ChapterId = typeof chapters[number]["id"];
 
 export default function CvView({ cv }: CvViewProps) {
-    const [activeChapter, setActiveChapter] = useState<ChapterId>(chapters[0].id);
+    const availableChapters = useMemo(() => chapters.filter((chapter) => {
+        if (chapter.id === "profile") return Boolean(cv?.profile?.summary);
+        if (chapter.id === "experience") return Boolean(cv?.experience?.length);
+        if (chapter.id === "skills") return Boolean(cv?.skills?.length);
+        if (chapter.id === "projects") return Boolean(cv?.projects?.length);
+        if (chapter.id === "research") return Boolean(cv?.research?.length);
+        return Boolean(cv?.education?.length);
+    }), [cv]);
+    const [activeChapter, setActiveChapter] = useState<ChapterId>(availableChapters[0]?.id ?? chapters[0].id);
     const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
     useEffect(() => {
@@ -25,12 +33,12 @@ export default function CvView({ cv }: CvViewProps) {
             if (visible[0]) setActiveChapter(visible[0].target.id as ChapterId);
         }, { rootMargin: "-15% 0px -65%", threshold: [0.1, 0.5, 1] });
 
-        chapters.forEach(({ id }) => {
+        availableChapters.forEach(({ id }) => {
             const section = sectionRefs.current[id];
             if (section) observer.observe(section);
         });
         return () => observer.disconnect();
-    }, []);
+    }, [availableChapters]);
 
     function goToChapter(id: ChapterId) {
         setActiveChapter(id);
@@ -47,7 +55,7 @@ export default function CvView({ cv }: CvViewProps) {
             </div>
             <div className="cv-layout">
                 <nav className="cv-timeline" aria-label="CV-Kapitel">
-                {chapters.map((chapter, index) => <button
+                {availableChapters.map((chapter, index) => <button
                     key={chapter.id}
                     className={activeChapter === chapter.id ? "active" : ""}
                     onClick={() => goToChapter(chapter.id)}

@@ -16,10 +16,7 @@ export default function ProjectCard(props: ProjectCardProps) {
     return (
         <div className="card" onClick={props.onClick}>
             <div className="card-image">
-                <img
-                    src={props.project.image}
-                    alt={props.project.title}
-                />
+                {props.project.image ? <img src={`${process.env.PUBLIC_URL}/${props.project.image}`} alt={props.project.title} /> : <div className="card-image-placeholder" aria-hidden="true" />}
             </div>
 
             <div className="card-content">

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>LK</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087f6f"/>
+      <stop offset="1" stop-color="#075b52"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#background)"/>
+  <path d="M17 14v36h8V37l13 13h11L34 33l14-19H38L25 31V14z" fill="#fff"/>
+  <path d="M15 14h8v36h-8z" fill="#d6a84f"/>
+</svg>

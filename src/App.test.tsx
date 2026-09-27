@@ -4,17 +4,22 @@ import ProjectModal from "./components/ProjectModal";
 
 test("renders configured projects and opens the project modal", () => {
     render(<PortfolioManager />);
-    expect(screen.getByText("Bauhof Aichach")).toBeInTheDocument();
-    fireEvent.click(screen.getByText("Bauhof Aichach"));
-    expect(screen.getByRole("tab", { name: "Bild" })).toBeInTheDocument();
-    expect(screen.getByRole("tab", { name: "Beschreibung" })).toBeInTheDocument();
-    expect(screen.getByRole("tab", { name: "Quellcode" })).toBeInTheDocument();
+    expect(screen.getByText("Slicer")).toBeInTheDocument();
+    fireEvent.click(screen.getByText("Slicer"));
+    expect(screen.getAllByRole("heading", { name: "Slicer" })).toHaveLength(2);
 });
 
 test("switches modal content to multiple repository links", () => {
-    render(<PortfolioManager />);
-    fireEvent.click(screen.getByText("Bauhof Aichach"));
-    fireEvent.click(screen.getByRole("tab", { name: "Quellcode" }));
+    render(<ProjectModal project={{
+        id: "repositories",
+        title: "Repository project",
+        shortDescription: "",
+        technologies: [],
+        repositories: [
+            { label: "Frontend", url: "https://github.com/user/project-frontend" },
+            { label: "Backend", url: "https://github.com/user/project-backend" },
+        ],
+    }} onClose={() => undefined} />);
     expect(screen.getByRole("link", { name: /Frontend/ })).toHaveAttribute("href", "https://github.com/user/project-frontend");
     expect(screen.getByRole("link", { name: /Backend/ })).toHaveAttribute("href", "https://github.com/user/project-backend");
 });
@@ -28,7 +33,8 @@ test("hides tabs when optional project content is missing", () => {
         technologies: [],
     }} onClose={() => undefined} />);
 
-    expect(screen.getByRole("tab", { name: "Bild" })).toBeInTheDocument();
+    expect(screen.queryByRole("tab")).not.toBeInTheDocument();
+    expect(screen.getByText("Beschreibung folgt.")).toBeInTheDocument();
     expect(screen.queryByRole("tab", { name: "Beschreibung" })).not.toBeInTheDocument();
     expect(screen.queryByRole("tab", { name: "Quellcode" })).not.toBeInTheDocument();
 });
@@ -56,6 +62,7 @@ test("provides a numbered, keyboard-accessible CV timeline", () => {
 
     const timelineButton = screen.getByRole("button", { name: "01 Kurzprofil" });
     expect(timelineButton).toHaveAttribute("aria-current", "step");
+    expect(screen.queryByRole("button", { name: /Projekte/ })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "02 Berufserfahrung" }));
     expect(screen.getByRole("button", { name: "02 Berufserfahrung" })).toHaveAttribute("aria-current", "step");
     expect(HTMLElement.prototype.scrollIntoView).toHaveBeenCalled();

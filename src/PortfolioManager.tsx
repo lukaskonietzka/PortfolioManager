@@ -27,6 +27,7 @@ function PortfolioManager() {
         return {
             "--accent": accent,
             "--accent-soft": accentSoft,
+            "--butterscotch": theme.butterscotch ?? "#d6a84f",
             "--page-bg": pageBackground,
             "--surface": theme.surface ?? theme.cardColor ?? "rgba(255, 255, 255, 0.86)",
             "--surface-strong": theme.surfaceStrong ?? "#ffffff",
