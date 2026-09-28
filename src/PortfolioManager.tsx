@@ -16,13 +16,13 @@ function PortfolioManager() {
     const themeVars = useMemo(() => {
         const theme = typedConfig.theme ?? {};
 
-        const accent = theme.accent ?? theme.primaryColor ?? "#ff6b3d";
-        const accentSoft = theme.accentSoft ?? "rgba(255, 107, 61, 0.16)";
+        const accent = theme.accent ?? theme.primaryColor ?? "#087f6f";
+        const accentSoft = theme.accentSoft ?? "rgba(8, 127, 111, 0.10)";
         const pageBackground =
             theme.pageBackground ??
-            "radial-gradient(1200px 600px at 10% -10%, #ffe6dc 0%, rgba(255, 230, 220, 0) 60%)," +
-            "radial-gradient(900px 500px at 90% 0%, #e6f0ff 0%, rgba(230, 240, 255, 0) 55%)," +
-            "linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%)";
+            "radial-gradient(1200px 600px at 10% -10%, #dff5ef 0%, rgba(223, 245, 239, 0) 60%)," +
+            "radial-gradient(900px 500px at 90% 0%, rgba(214, 168, 79, 0.12) 0%, rgba(214, 168, 79, 0) 55%)," +
+            "linear-gradient(180deg, #ffffff 0%, #f2faf8 100%)";
 
         return {
             "--accent": accent,
@@ -48,8 +48,8 @@ function PortfolioManager() {
                 {view === "cv" ? <CvView cv={typedConfig.cv} /> : <section className="section">
                     <div className="section-header">
                         <div>
-                            <h2>Ausgewählte Projekte</h2>
-                            <p>Konzept, Visualisierung und Umsetzung aus einer Hand.</p>
+                            <h2>Meine Projekte</h2>
+                            <p>Hier findest du einige der Projekte, die ich allein, im Team oder als Teil einer Open-Source-Community entwickelt habe und weiterentwickle.</p>
                         </div>
                         <div className="section-meta">
                             {typedConfig.projects.length} Projekte

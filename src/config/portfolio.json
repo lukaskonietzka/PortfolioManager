@@ -3,7 +3,7 @@
     "title": "Softwareentwickler",
     "name": "Lukas Konietzka",
     "image": "img/me_sticker.png",
-    "intro": "Softwareentwickler mit Erfahrung in Webentwicklung, KI-Agenten, Softwarearchitektur und der Entwicklung wissenschaftlicher Software."
+    "intro": "Ich bin Softwareentwickler mit Schwerpunkt auf Webentwicklung und einer besonderen Leidenschaft für medizinische Bildverarbeitung. Von großen Enterprise-Lösungen bis hin zu kleinen, spezialisierten Softwarekomponenten habe ich unterschiedlichste Projekte konzipiert und umgesetzt. Einen Einblick in meinen Werdegang und meine Projekte findest du hier."
   },
   "theme": {
     "accent": "#087f6f",
@@ -28,13 +28,13 @@
         "period": "2025–heute",
         "position": "Softwareentwickler",
         "company": "Sonntag IT Solutions",
-        "description": "Bei der Sonntag IT Solutions bin ich maßgeblich an der Konzeption, Architektur und Entwicklung moderner Softwarelösungen beteiligt. Zu meinen Aufgaben gehören die Entwicklung und Gestaltung hochwertiger Softwareprodukte, die Erstellung technischer Dokumentationen sowie der Einsatz von KI-Agenten zur Entwicklung innovativer Lösungen. Dabei arbeite ich in kleinen, agilen Scrum-Teams und legte besonderen Wert auf eine enge Zusammenarbeit mit den Kunden sowie die praxisnahe Umsetzung ihrer Anforderungen.",
+        "description": "Bei der Sonntag IT Solutions bin ich maßgeblich an der Konzeption, Architektur und Entwicklung moderner Softwarelösungen beteiligt. Zu meinen Aufgaben gehören die Entwicklung und Gestaltung hochwertiger Softwareprodukte, die Erstellung technischer Dokumentationen sowie der Einsatz von KI-Agenten zur Entwicklung innovativer Lösungen. Dabei arbeite ich in kleinen, agilen Scrum-Teams und lege besonderen Wert auf eine enge Zusammenarbeit mit den Kunden sowie die praxisnahe Umsetzung ihrer Anforderungen.",
         "highlights": [
           "Entwicklung großer Enterprise-Softwarelösungen im Web",
           "Prozessautomatisierungen",
-          "Eintwicklung medizinischer Softwareprodukte",
+          "Entwicklung medizinischer Softwareprodukte",
           "Entwicklung von Softwarekomponenten für die Bauindustrie",
-          "Professionelle KI-Gestützte Entwicklung"
+          "Professionelle KI-gestützte Entwicklung"
         ]
       },
       {
@@ -55,15 +55,15 @@
       },
       {
         "period": "2017–2019",
-        "position": "PLC Programmierer",
-        "company": "SIEMENS AG Augsburg",
+        "position": "PLC-Programmierer",
+        "company": "Siemens AG Augsburg",
         "description": "Meine berufliche Laufbahn begann ich in der Industrie als PLC-Programmierer bei der Siemens AG. In dieser Position war ich deutschlandweit im Einsatz und verantwortlich für die Inbetriebnahme und Programmierung von Werkzeug- und Produktionsmaschinen. Die abwechslungsreiche Tätigkeit vor Ort ermöglichte mir, umfassende praktische Erfahrungen in der Automatisierungstechnik zu sammeln und ein tiefes Verständnis für industrielle Prozesse und Anlagen zu entwickeln. Im weiteren Verlauf meiner Tätigkeit spezialisierte ich mich zunehmend auf die Programmierung und Inbetriebnahme von Krananlagen.",
         "highlights": [
           "PLC-Programmierung",
           "Inbetriebnahme",
           "Erstellen von Benutzerhandbüchern",
-          "Hardwaretechnik und Verdrahtungstechnik einer SPS",
-          "Elektornik- und Schaltschranktechnik"
+          "Hardware- und Verdrahtungstechnik für SPS",
+          "Elektronik- und Schaltschranktechnik"
         ]
       }
     ],
@@ -74,7 +74,7 @@
         "title": "Forschung am LMU Klinikum für Zahnerhaltung",
         "period": "2024–heute",
         "context": "LMU Klinikum für Zahnerhaltung",
-        "description": "Entwicklung von Softwarekomponenten für die Kariesforschung und Entwicklung eines Algorithmus zum automatischen Segmentieren von durch künstliche Intelligenz erzeugten µ-CT-Bildern. Bereits als Co-Autor an einem wissenschaftlichen Paper veröffentlicht."
+        "description": "Entwicklung von Softwarekomponenten für die Kariesforschung sowie eines Algorithmus zur automatischen Segmentierung von durch künstliche Intelligenz erzeugten µCT-Bildern. Bereits als Co-Autor an einem wissenschaftlichen Paper mitgewirkt, das veröffentlicht wurde."
       }
     ],
     "education": [
@@ -102,7 +102,7 @@
     {
       "id": "slicer",
       "title": "Slicer",
-      "shortDescription": "Open-Source-Projekt, an dem ich aktuell arbeite.",
+      "shortDescription": "Aktuelles Open-Source-Projekt, an dem ich mitentwickle.",
       "description": ["3D Slicer ist eine kostenlose Open-Source-Software zur Visualisierung, Verarbeitung, Segmentierung, Registrierung und Analyse medizinischer, biomedizinischer und anderer 3D-Bilder und -Modelle. Darüber hinaus ermöglicht die Software die Planung und Navigation bildgestützter medizinischer Eingriffe."],
       "image": "img/3D-Slicer-Mark.svg",
       "technologies": ["C++", "CMake", "Python"],
@@ -111,8 +111,8 @@
     {
       "id": "slicer-tooth-analyser",
       "title": "SlicerToothAnalyser",
-      "shortDescription": "3D-Slicer-Erweiterung zur Verarbeitung, Segmentierung und Analyse von Zahn-µCT-Daten.",
-      "description": ["ToothAnalyserMicroCT ist eine in Entwicklung befindliche Erweiterung für die Open-Source-Software **3D Slicer**, die speziell für die Verarbeitung und Analyse von Mikro-Computertomographie-Aufnahmen (Micro-CT) von Zähnen entwickelt wurde. Sie bietet spezialisierte Funktionen zur Vorverarbeitung, Segmentierung und Analyse, die gezielt auf die Untersuchung der Zahnanatomie und pathologischer Veränderungen ausgerichtet sind. Das Projekt entstand in Zusammenarbeit zwischen dem **Fachbereich Informatik der Technischen Hochschule Augsburg** und der **Klinik und Poliklinik für Zahnerhaltung, Parodontologie und Digitale Zahnmedizin des LMU Klinikums München**. Durch automatisierte und teilautomatisierte Workflows unterstützt ToothAnalyserMicroCT die Durchführung und Weiterentwicklung fortschrittlicher zahnmedizinischer Forschung."],
+      "shortDescription": "3D-Slicer-Erweiterung zur Verarbeitung, Segmentierung und Analyse von Zahn-µCT-Daten",
+      "description": ["ToothAnalyserMicroCT ist eine in Entwicklung befindliche Erweiterung für die Open-Source-Software 3D Slicer, die speziell für die Verarbeitung und Analyse von Mikro-CT-Aufnahmen von Zähnen entwickelt wurde. Sie bietet spezialisierte Funktionen zur Vorverarbeitung, Segmentierung und Analyse, die gezielt auf die Untersuchung der Zahnanatomie und pathologischer Veränderungen ausgerichtet sind. Durch automatisierte und teilautomatisierte Workflows unterstützt ToothAnalyserMicroCT die Durchführung und Weiterentwicklung fortschrittlicher zahnmedizinischer Forschung."],
       "image": "img/SlicerToothAnalyser.png",
       "technologies": ["Python", "CMake"],
       "repositories": [{"label": "GitHub", "url": "https://github.com/lukaskonietzka/SlicerToothAnalyser"}]
@@ -123,14 +123,14 @@
       "shortDescription": "Webbasierter und interaktiver Chatbot für das Nachhaltigkeitsbüro in Augsburg.",
       "description": ["Der Chatbot GreenAssistant gibt praktische Tipps für einen nachhaltigeren Alltag und vermittelt dabei die spezifischen Nachhaltigkeitsziele Augsburgs. Mithilfe modernster KI-Technologien werden Nutzerfragen individuell und präzise beantwortet. Dieses innovative Open-Source-Projekt macht nachhaltiges Handeln für alle zugänglich."],
       "image": "img/green-assistant.gif",
-      "technologies": ["TypeScript", "React", "Python", "LAMA"],
+      "technologies": ["TypeScript", "React", "Python", "LLaMA"],
       "repositories": [{"label": "GitHub", "url": "https://github.com/GreenAssistant/GreenAssistant"}]
     },
     {
       "id": "eco-heroes",
       "title": "Eco Heroes",
-      "shortDescription": "VR-Speil für das Büro für Nachhaltigkeit",
-      "description": ["Auf spielerische Art und Weise sollen Schülerinnen und Schülern die in den Zukunftsleitlinien der Stadt Augsburg verankerten Nachhaltigkeitsziele vermittelt werden. Im Zuge dieses Projekts entstehen in Zusammenarbeit mit dem Nachhaltigkeitsbüro Augsburg und dem Schülerlabor der Universität Augsburg vier Virtual Reality Minispiele zu jeweils einer der vier Nachhaltigkeitsdimensionen Ökologie, Wirtschaft, Soziales und Kultur."],
+      "shortDescription": "VR-Spiel für das Büro für Nachhaltigkeit zum spielerischen Lernen der vier Dimensionen der Nachhaltigkeit in Augsburg.",
+      "description": ["Auf spielerische Art und Weise sollen Schülerinnen und Schüler die in den Zukunftsleitlinien der Stadt Augsburg verankerten Nachhaltigkeitsziele kennenlernen. Im Zuge dieses Projekts entstehen in Zusammenarbeit mit dem Nachhaltigkeitsbüro Augsburg und dem Schülerlabor der Universität Augsburg vier Virtual-Reality-Minispiele zu jeweils einer der vier Nachhaltigkeitsdimensionen: Ökologie, Wirtschaft, Soziales und Kultur."],
       "image": "img/ecoheroes.png",
       "technologies": ["C#", "Unity"],
       "repositories": [{"label": "GitHub", "url": "https://github.com/EcoHeroes-VR/EcoHeroes"}]
