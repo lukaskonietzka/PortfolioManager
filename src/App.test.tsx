@@ -49,10 +49,10 @@ test("switches between portfolio and the configured CV view", () => {
     expect(screen.queryByRole("heading", { name: "Projekte" })).not.toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Forschung" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Ausbildung" })).toBeInTheDocument();
-    expect(screen.queryByText("Ausgewählte Projekte")).not.toBeInTheDocument();
+    expect(screen.queryByText("Meine Projekte")).not.toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "Portfolio" }));
-    expect(screen.getByText("Ausgewählte Projekte")).toBeInTheDocument();
+    expect(screen.getByText("Meine Projekte")).toBeInTheDocument();
 });
 
 test("provides a numbered, keyboard-accessible CV timeline", () => {

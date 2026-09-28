@@ -69,7 +69,7 @@
 .modal-body {
     flex: 1;
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
     gap: 28px;
@@ -78,12 +78,11 @@
 }
 
 .modal-image { display: block; width: 100%; max-height: 58vh; object-fit: contain; border-radius: 12px; }
-.modal-copy { min-width: 0; color: var(--muted); line-height: 1.7; overflow: auto; max-height: 58vh; }
+.modal-copy { min-width: 0; color: var(--muted); line-height: 1.7; overflow: visible; max-height: none; }
 .modal-copy p { margin: 0 0 1rem; }
 .modal-empty { font-style: italic; }
 .repository-list { display: grid; gap: 12px; width: 100%; }
-.repository-list h3 { margin: 8px 0 0; color: var(--text); }
-.repository-link { display: flex; justify-content: space-between; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+.repository-link { display: flex; justify-content: space-between; padding: 6px 9px; border: 1px solid var(--border); border-radius: 7px; color: var(--muted); text-decoration: none; font-size: 12px; font-weight: 400; }
 .repository-link:hover { border-color: var(--accent); }
 
 /* Responsive */
@@ -110,4 +109,5 @@
     .modal-image { max-height: 52vh; }
     .modal-body { grid-template-columns: 1fr; gap: 18px; }
     .modal-copy { max-height: none; }
+    .modal-body { overflow: auto; }
 }
